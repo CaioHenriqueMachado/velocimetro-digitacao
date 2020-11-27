@@ -97,19 +97,19 @@ span {
   padding: 5px;
 }
 
-.agora {
+.bgGray {
   background-color: rgba(128, 128, 128, 0.623);
 
 }
 
-.errando {
+.bgRed {
   background-color: rgba(255, 0, 0, 0.774);
 }
 
-.correto {
+.success {
   color: green;
 }
 
-.errado {
+.failure {
   color: red;
 }
