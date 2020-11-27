@@ -90,3 +90,26 @@ div.input div.buttons div.reset {
   justify-content: center;
   align-items: center;
 }
+
+
+span {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.agora {
+  background-color: rgba(128, 128, 128, 0.623);
+
+}
+
+.errando {
+  background-color: rgba(255, 0, 0, 0.774);
+}
+
+.correto {
+  color: green;
+}
+
+.errado {
+  color: red;
+}
