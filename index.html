@@ -11,27 +11,39 @@
     <h1> Velocimetro de digitação</h1>
     <div class="box">
       <div class="text" id="whiteboard">
-
-        <!-- <span id="0" class="">aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaa</span> -->
       </div>
 
       <div class="input">
-        <input type="text" id="input" onkeyup="word(value)" >
+        <input type="text" id="input"  onkeyup="word(value)" >
         <div class="buttons">
           <div class="timer">
-            1:00
+            <span id="timer">1:00</span>
+            
           </div>
-          <div class="reset">
+          <div class="reset" onclick="reset()">
             RESET
           </div>
         </div>
 
       </div>
     </div>
-
-    <div class="estatisticas">
-      você fez em 30 seguns
+    <div class="result disabled" >
+      <span id="title">RESULTADO</span>
+      <div>
+          <span id="ppm">30 PPM</span>
+          <span>(palavras por minuto)</span>
+        <span>
+          Tecladas:<strong id="teclas">161</strong>  <br/>
+          ( <strong id="teclasCertas">150</strong>  | <strong id="teclasErradas">11</strong> ) <br/><br/>
+          Precisão <strong id="precisao">90,36%</strong>
+        </span>
+        <span>
+          Palavras: <strong id="palavras">29</strong> <br/>
+          ( <strong id="palavrasCertas">27</strong>  | <strong id="palavrasErradas">2</strong> ) <br/><br/>
+        </span>
+      </div>
     </div>
+
   </div>
   <script src="./js/script.js"></script>
 </body>
