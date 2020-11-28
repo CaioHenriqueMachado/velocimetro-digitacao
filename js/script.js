@@ -109,7 +109,7 @@ function clock() {
     timer-= 1;
     timerClock.innerText = "0:" + timer;
 
-    if( timer == 45) {
+    if( timer == 0) {
       clearInterval(t);
       input.value = "";
       input.setAttribute("disabled", true);
